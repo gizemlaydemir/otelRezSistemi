@@ -17,7 +17,7 @@ namespace otelRezervasyonSistemi_Odev.DAL
     {
         public static MySqlConnection BaglantiCagır()
         {
-            //aaaaaaaaa
+            //aaaa123
             try
             {
                 MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.253;Database=25_132330052;User=25_132330052;Password=!nif.ogr52AY;");
