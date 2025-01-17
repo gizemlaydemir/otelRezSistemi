@@ -16,7 +16,7 @@ namespace otelRezervasyonSistemi_Odev
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KisiKayit());
+            Application.Run(new frmYoneticiGiris());
         }
     }
 }
