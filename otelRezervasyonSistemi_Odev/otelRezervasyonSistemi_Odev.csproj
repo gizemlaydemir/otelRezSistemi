@@ -52,16 +52,22 @@
   <ItemGroup>
     <Compile Include="DAL\DbBaglanti.cs" />
     <Compile Include="DAL\MusteriDAL.cs" />
-    <Compile Include="KisiKayit.cs">
+    <Compile Include="frmKisiKayit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KisiKayit.Designer.cs">
-      <DependentUpon>KisiKayit.cs</DependentUpon>
+    <Compile Include="frmKisiKayit.Designer.cs">
+      <DependentUpon>frmKisiKayit.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="KisiKayit.resx">
-      <DependentUpon>KisiKayit.cs</DependentUpon>
+    <Compile Include="frmKisiKayit2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKisiKayit2.Designer.cs">
+      <DependentUpon>frmKisiKayit2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmKisiKayit.resx">
+      <DependentUpon>frmKisiKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +79,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="frmKisiKayit2.resx">
+      <DependentUpon>frmKisiKayit2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\b702afc7b811840ebc49037cdc98bc45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

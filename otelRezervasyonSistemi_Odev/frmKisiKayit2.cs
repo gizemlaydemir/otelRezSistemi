@@ -10,42 +10,23 @@ using System.Windows.Forms;
 
 namespace otelRezervasyonSistemi_Odev
 {
-    public partial class KisiKayit : Form
+    public partial class frmKisiKayit2 : Form
     {
-        public KisiKayit()
+        public frmKisiKayit2()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Btn_Cikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
-
-        }
-
-        private void kız_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox8_Enter(object sender, EventArgs e)
-        {
-
+            frmKisiKayit frm = new frmKisiKayit();
+            frm.Show();
+            this.Close();
         }
     }
 }
