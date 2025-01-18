@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using MySql.Data.MySqlClient;
+using otelRezervasyonSistemi_Odev.bl;
+using otelRezervasyonSistemi_Odev.DAL;
 
 namespace otelRezervasyonSistemi_Odev
 {
@@ -48,13 +51,28 @@ namespace otelRezervasyonSistemi_Odev
         {
 
         }
-
+        DbBaglanti snf = new DbBaglanti();
         private void btnSonraki_Click(object sender, EventArgs e)
         {
-            //kontürelleri sağladıktan sonra sonraki sayfaya geç
-            frmMusteriKayit frm = new frmMusteriKayit();
-            frm.Show();
-            this.Hide();
+            (new blGiris()).yoneticibilgi(txtKulAdi.Text, txtSifre.Text);
+            MySqlCommand komut = new MySqlCommand("select * from YoneticiGirisEkrani where KulaniciAdi =@a1 and KullaniciSifre=@s1",snf.BaglantiCagır());
+            komut.Parameters.AddWithValue("@a1", txtKulAdi.Text);
+            komut.Parameters.AddWithValue("@s1", txtSifre.Text);
+            MySqlDataReader oku = komut.ExecuteReader();
+            if (oku.Read())
+            {
+                frmMusteriKayit frm = new frmMusteriKayit();
+                frm.Show();
+                this.Hide();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Girdiğiniz Bilgiler Hatalıdır");
+            }
+           
+            
 
 
         }

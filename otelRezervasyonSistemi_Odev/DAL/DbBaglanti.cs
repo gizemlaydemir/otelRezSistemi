@@ -15,20 +15,15 @@ namespace otelRezervasyonSistemi_Odev.DAL
 {
     public class DbBaglanti
     {
-        public static MySqlConnection BaglantiCagır()
+        public MySqlConnection BaglantiCagır()
         {
-            //aaaa123
-            try
-            {
-                MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.253;Database=25_132330052;User=25_132330052;Password=!nif.ogr52AY;");
+
+            
+                MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.253; Database=25_132330052; Uid=25_132330052; Pwd=!nif.ogr52AY");
                 baglanti.Open();
                 return baglanti;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Bağlantıda bir hata oluştu: {ex.Message}");
-                throw;
-            }
+            
+            
         }
     }
 }
