@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using otelRezervasyonSistemi_Odev.bl;
 
 namespace otelRezervasyonSistemi_Odev
 {
@@ -31,7 +32,10 @@ namespace otelRezervasyonSistemi_Odev
 
         private void btnSonraki_Click(object sender, EventArgs e)
         {
-            if (txtTcKimlik.Text != "" && txtIsim.Text != "" && txtSoyad.Text != "" && txtDogumTarihi.Text != ""  && txtOdaNumarasi.Text != "" && txtUcret.Text != "")
+            (new blmusterikayit()).rezkaydet(txtIsim.Text, txtSoyad.Text, Convert.ToInt64(txtTcKimlik.Text), Convert.ToInt16(txtOdaNumarasi.Text), dtpGirisTarihi.Text, dtpCikisTarihi.Text, cbodatipi.Text,Convert.ToInt64(txtTelefonNumarasi.Text), cbcinsiyet.Text);
+
+
+            if (txtTcKimlik.Text != "" && txtIsim.Text != "" && txtSoyad.Text != "" && txtOdaNumarasi.Text != "" )
             {
               
             }
@@ -55,9 +59,7 @@ namespace otelRezervasyonSistemi_Odev
             txtIsim.Text = "";
             mtbTelefonNumarasi.Text = "";
             txtSoyad.Text = "";
-            txtDogumTarihi.Text = "";
             txtOdaNumarasi.Text = "";
-            txtUcret.Text = "";
             rbErkek.Checked = true;
             rbKadin.Checked = false;
 
@@ -208,6 +210,21 @@ namespace otelRezervasyonSistemi_Odev
         }   
 
         private void lbl0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbMüsteriKayit_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mtbTelefonNumarasi_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

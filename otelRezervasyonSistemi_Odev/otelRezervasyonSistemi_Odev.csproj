@@ -51,10 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bl\blGiris.cs" />
+    <Compile Include="bl\blmusterikayit.cs" />
     <Compile Include="DAL\dalGiris.cs" />
     <Compile Include="DAL\DbBaglanti.cs" />
     <Compile Include="DAL\MusteriDAL.cs" />
     <Compile Include="ENTİTYLAYER\elgiris.cs" />
+    <Compile Include="ENTİTYLAYER\elMusteriKayit.cs" />
     <Compile Include="frmAnaEkran.cs">
       <SubType>Form</SubType>
     </Compile>
