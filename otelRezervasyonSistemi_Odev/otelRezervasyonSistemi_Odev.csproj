@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="DAL\DbBaglanti.cs" />
     <Compile Include="DAL\MusteriDAL.cs" />
+    <Compile Include="frmAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaEkran.Designer.cs">
+      <DependentUpon>frmAnaEkran.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmYoneticiGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="frmMusteriKayit.Designer.cs">
       <DependentUpon>frmMusteriKayit.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAnaEkran.resx">
+      <DependentUpon>frmAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmYoneticiGiris.resx">
       <DependentUpon>frmYoneticiGiris.cs</DependentUpon>
     </EmbeddedResource>

@@ -58,5 +58,11 @@ namespace otelRezervasyonSistemi_Odev
 
 
         }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtKulAdi.Text = "";
+            txtSifre.Text = "";
+        }
     }
 }

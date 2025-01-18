@@ -103,6 +103,7 @@
             this.btnTemizle.TabIndex = 10;
             this.btnTemizle.Text = "TEMİZLE";
             this.btnTemizle.UseVisualStyleBackColor = false;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // btnSonraki
             // 

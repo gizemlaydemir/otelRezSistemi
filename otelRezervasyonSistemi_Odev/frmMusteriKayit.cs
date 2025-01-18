@@ -31,7 +31,7 @@ namespace otelRezervasyonSistemi_Odev
 
         private void btnSonraki_Click(object sender, EventArgs e)
         {
-            if (txtTcKimlik.Text!="" && txtIsim.Text!="" && txtSoyad.Text!="" && txtDogumTarihi.Text!="" && txtTelNo.Text!="")
+            if (txtTcKimlik.Text != "" && txtIsim.Text != "" && txtSoyad.Text != "" && txtDogumTarihi.Text != ""  && txtOdaNumarasi.Text != "" && txtÜcret.Text != "")
             {
               
             }
@@ -55,9 +55,11 @@ namespace otelRezervasyonSistemi_Odev
             txtIsim.Text = "";
             txtSoyad.Text = "";
             txtDogumTarihi.Text = "";
-            txtTelNo.Text = "";
+            txtOdaNumarasi.Text = "";
+            txtÜcret.Text = "";
             rbErkek.Checked = true;
             rbKadin.Checked = false;
+
 
 
 
@@ -82,6 +84,121 @@ namespace otelRezervasyonSistemi_Odev
         private void txtTelNo_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbKadin_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "103";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "102";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "201";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "106";
+        }
+
+        private void txtÜcret_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOda101_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "101";
+        }
+
+        private void btnOda104_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "104";
+        }
+
+        private void btnOda105_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "105";
+        }
+
+        private void btnOda202_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "202";
+        }
+
+        private void btnOda203_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "203";
+        }
+
+        private void btnOda204_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "204";
+        }
+
+        private void btnOda205_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "205";
+        }
+
+        private void btnOda206_Click(object sender, EventArgs e)
+        {
+            txtOdaNumarasi.Text = "206";
+        }
+
+        private void txtIsim_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIsim_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void btnDoluOda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Kırmızı renkli odalar doludur.");
+        }
+
+        private void btnBosOda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Yeşil renkli odalar boştur.");
+        }
+
+        private void txtTcKimlik_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTelNo_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
