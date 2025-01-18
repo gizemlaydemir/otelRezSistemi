@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using otelRezervasyonSistemi_Odev.bl;
 
 namespace otelRezervasyonSistemi_Odev
 {
@@ -34,7 +35,9 @@ namespace otelRezervasyonSistemi_Odev
 
         private void frmMusteriBilgileri_Load(object sender, EventArgs e)
         {
-
+            blmusterikayit blk = new blmusterikayit();
+            DataTable data = blk.databilgial();
+            dataGridView1.DataSource = data;
         }
     }
 }
