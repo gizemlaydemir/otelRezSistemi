@@ -31,7 +31,7 @@ namespace otelRezervasyonSistemi_Odev
 
         private void btnSonraki_Click(object sender, EventArgs e)
         {
-            if (txtTcKimlik.Text != "" && txtIsim.Text != "" && txtSoyad.Text != "" && txtDogumTarihi.Text != ""  && txtOdaNumarasi.Text != "" && txtÜcret.Text != "")
+            if (txtTcKimlik.Text != "" && txtIsim.Text != "" && txtSoyad.Text != "" && txtDogumTarihi.Text != ""  && txtOdaNumarasi.Text != "" && txtUcret.Text != "")
             {
               
             }
@@ -53,10 +53,11 @@ namespace otelRezervasyonSistemi_Odev
             //temizlemetuşu
             txtTcKimlik.Text = "";
             txtIsim.Text = "";
+            mtbTelefonNumarasi.Text = "";
             txtSoyad.Text = "";
             txtDogumTarihi.Text = "";
             txtOdaNumarasi.Text = "";
-            txtÜcret.Text = "";
+            txtUcret.Text = "";
             rbErkek.Checked = true;
             rbKadin.Checked = false;
 
@@ -197,6 +198,16 @@ namespace otelRezervasyonSistemi_Odev
         }
 
         private void txtTelNo_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpGirisTarihi_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }   
+
+        private void lbl0_Click(object sender, EventArgs e)
         {
 
         }

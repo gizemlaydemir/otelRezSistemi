@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.pnl_UstMenu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Cikis = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTemizle = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.gbMüsteriKayit = new System.Windows.Forms.GroupBox();
-            this.gbOdalar = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtUcret = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.dtpCikisTarihi = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -42,6 +44,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtOdaNumarasi = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.mtbTelefonNumarasi = new System.Windows.Forms.MaskedTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDogumTarihi = new System.Windows.Forms.TextBox();
@@ -54,40 +58,36 @@
             this.txtIsim = new System.Windows.Forms.TextBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.txtTcKimlik = new System.Windows.Forms.TextBox();
-            this.btnOda101 = new System.Windows.Forms.Button();
-            this.btnOda102 = new System.Windows.Forms.Button();
-            this.btnOda103 = new System.Windows.Forms.Button();
-            this.btnOda105 = new System.Windows.Forms.Button();
-            this.btnOda104 = new System.Windows.Forms.Button();
-            this.btnOda106 = new System.Windows.Forms.Button();
-            this.btnOda201 = new System.Windows.Forms.Button();
-            this.btnOda204 = new System.Windows.Forms.Button();
-            this.btnOda202 = new System.Windows.Forms.Button();
-            this.btnOda203 = new System.Windows.Forms.Button();
-            this.btnOda205 = new System.Windows.Forms.Button();
-            this.btnOda206 = new System.Windows.Forms.Button();
-            this.btnDoluOda = new System.Windows.Forms.Button();
+            this.gbOdalar = new System.Windows.Forms.GroupBox();
             this.btnBosOda = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtÜcret = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.btnDoluOda = new System.Windows.Forms.Button();
+            this.btnOda206 = new System.Windows.Forms.Button();
+            this.btnOda205 = new System.Windows.Forms.Button();
+            this.btnOda203 = new System.Windows.Forms.Button();
+            this.btnOda202 = new System.Windows.Forms.Button();
+            this.btnOda204 = new System.Windows.Forms.Button();
+            this.btnOda201 = new System.Windows.Forms.Button();
+            this.btnOda106 = new System.Windows.Forms.Button();
+            this.btnOda104 = new System.Windows.Forms.Button();
+            this.btnOda105 = new System.Windows.Forms.Button();
+            this.btnOda103 = new System.Windows.Forms.Button();
+            this.btnOda102 = new System.Windows.Forms.Button();
+            this.btnOda101 = new System.Windows.Forms.Button();
             this.pnl_UstMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbMüsteriKayit.SuspendLayout();
-            this.gbOdalar.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupbox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox11.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbOdalar.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_UstMenu
@@ -101,6 +101,17 @@
             this.pnl_UstMenu.Name = "pnl_UstMenu";
             this.pnl_UstMenu.Size = new System.Drawing.Size(739, 50);
             this.pnl_UstMenu.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Btn_Cikis
             // 
@@ -176,30 +187,30 @@
             this.gbMüsteriKayit.TabStop = false;
             this.gbMüsteriKayit.Text = "MÜŞTERİ BİLGİLERİ";
             // 
-            // gbOdalar
+            // groupBox1
             // 
-            this.gbOdalar.Controls.Add(this.btnBosOda);
-            this.gbOdalar.Controls.Add(this.btnDoluOda);
-            this.gbOdalar.Controls.Add(this.btnOda206);
-            this.gbOdalar.Controls.Add(this.btnOda205);
-            this.gbOdalar.Controls.Add(this.btnOda203);
-            this.gbOdalar.Controls.Add(this.btnOda202);
-            this.gbOdalar.Controls.Add(this.btnOda204);
-            this.gbOdalar.Controls.Add(this.btnOda201);
-            this.gbOdalar.Controls.Add(this.btnOda106);
-            this.gbOdalar.Controls.Add(this.btnOda104);
-            this.gbOdalar.Controls.Add(this.btnOda105);
-            this.gbOdalar.Controls.Add(this.btnOda103);
-            this.gbOdalar.Controls.Add(this.btnOda102);
-            this.gbOdalar.Controls.Add(this.btnOda101);
-            this.gbOdalar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOdalar.Location = new System.Drawing.Point(372, 56);
-            this.gbOdalar.Name = "gbOdalar";
-            this.gbOdalar.Size = new System.Drawing.Size(355, 311);
-            this.gbOdalar.TabIndex = 23;
-            this.gbOdalar.TabStop = false;
-            this.gbOdalar.Text = "ODALAR";
-            this.gbOdalar.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBox1.Controls.Add(this.txtUcret);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.groupBox1.Location = new System.Drawing.Point(143, 194);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.groupBox1.Size = new System.Drawing.Size(108, 37);
+            this.groupBox1.TabIndex = 31;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "ÜCRET";
+            // 
+            // txtUcret
+            // 
+            this.txtUcret.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.txtUcret.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUcret.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtUcret.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUcret.Location = new System.Drawing.Point(15, 12);
+            this.txtUcret.Name = "txtUcret";
+            this.txtUcret.Size = new System.Drawing.Size(90, 22);
+            this.txtUcret.TabIndex = 0;
+            this.txtUcret.TextChanged += new System.EventHandler(this.txtÜcret_TextChanged);
             // 
             // groupBox9
             // 
@@ -240,6 +251,7 @@
             this.dtpGirisTarihi.Name = "dtpGirisTarihi";
             this.dtpGirisTarihi.Size = new System.Drawing.Size(102, 22);
             this.dtpGirisTarihi.TabIndex = 0;
+            this.dtpGirisTarihi.ValueChanged += new System.EventHandler(this.dtpGirisTarihi_ValueChanged);
             // 
             // groupBox3
             // 
@@ -268,7 +280,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.maskedTextBox1);
+            this.groupBox8.Controls.Add(this.mtbTelefonNumarasi);
             this.groupBox8.Controls.Add(this.pictureBox2);
             this.groupBox8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
@@ -279,6 +291,25 @@
             this.groupBox8.TabIndex = 27;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "TELEFON NUMARASI";
+            // 
+            // mtbTelefonNumarasi
+            // 
+            this.mtbTelefonNumarasi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.mtbTelefonNumarasi.Location = new System.Drawing.Point(18, 18);
+            this.mtbTelefonNumarasi.Mask = "(999) 000-0000";
+            this.mtbTelefonNumarasi.Name = "mtbTelefonNumarasi";
+            this.mtbTelefonNumarasi.Size = new System.Drawing.Size(100, 22);
+            this.mtbTelefonNumarasi.TabIndex = 32;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.maps;
+            this.pictureBox2.Location = new System.Drawing.Point(-312, -39);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
             // 
             // groupBox7
             // 
@@ -432,161 +463,30 @@
             this.txtTcKimlik.TabIndex = 0;
             this.txtTcKimlik.TextChanged += new System.EventHandler(this.txtTcKimlik_TextChanged);
             // 
-            // btnOda101
+            // gbOdalar
             // 
-            this.btnOda101.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda101.ForeColor = System.Drawing.Color.White;
-            this.btnOda101.Location = new System.Drawing.Point(25, 36);
-            this.btnOda101.Name = "btnOda101";
-            this.btnOda101.Size = new System.Drawing.Size(60, 39);
-            this.btnOda101.TabIndex = 0;
-            this.btnOda101.Text = "101";
-            this.btnOda101.UseVisualStyleBackColor = false;
-            this.btnOda101.Click += new System.EventHandler(this.btnOda101_Click);
-            // 
-            // btnOda102
-            // 
-            this.btnOda102.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda102.ForeColor = System.Drawing.Color.White;
-            this.btnOda102.Location = new System.Drawing.Point(147, 36);
-            this.btnOda102.Name = "btnOda102";
-            this.btnOda102.Size = new System.Drawing.Size(60, 39);
-            this.btnOda102.TabIndex = 1;
-            this.btnOda102.Text = "102";
-            this.btnOda102.UseVisualStyleBackColor = false;
-            this.btnOda102.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnOda103
-            // 
-            this.btnOda103.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda103.ForeColor = System.Drawing.Color.White;
-            this.btnOda103.Location = new System.Drawing.Point(268, 36);
-            this.btnOda103.Name = "btnOda103";
-            this.btnOda103.Size = new System.Drawing.Size(60, 39);
-            this.btnOda103.TabIndex = 2;
-            this.btnOda103.Text = "103";
-            this.btnOda103.UseVisualStyleBackColor = false;
-            this.btnOda103.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnOda105
-            // 
-            this.btnOda105.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda105.ForeColor = System.Drawing.Color.White;
-            this.btnOda105.Location = new System.Drawing.Point(147, 96);
-            this.btnOda105.Name = "btnOda105";
-            this.btnOda105.Size = new System.Drawing.Size(60, 39);
-            this.btnOda105.TabIndex = 3;
-            this.btnOda105.Text = "105";
-            this.btnOda105.UseVisualStyleBackColor = false;
-            this.btnOda105.Click += new System.EventHandler(this.btnOda105_Click);
-            // 
-            // btnOda104
-            // 
-            this.btnOda104.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda104.ForeColor = System.Drawing.Color.White;
-            this.btnOda104.Location = new System.Drawing.Point(25, 96);
-            this.btnOda104.Name = "btnOda104";
-            this.btnOda104.Size = new System.Drawing.Size(60, 39);
-            this.btnOda104.TabIndex = 4;
-            this.btnOda104.Text = "104";
-            this.btnOda104.UseVisualStyleBackColor = false;
-            this.btnOda104.Click += new System.EventHandler(this.btnOda104_Click);
-            // 
-            // btnOda106
-            // 
-            this.btnOda106.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda106.ForeColor = System.Drawing.Color.White;
-            this.btnOda106.Location = new System.Drawing.Point(268, 96);
-            this.btnOda106.Name = "btnOda106";
-            this.btnOda106.Size = new System.Drawing.Size(60, 39);
-            this.btnOda106.TabIndex = 5;
-            this.btnOda106.Text = "106";
-            this.btnOda106.UseVisualStyleBackColor = false;
-            this.btnOda106.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // btnOda201
-            // 
-            this.btnOda201.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda201.ForeColor = System.Drawing.Color.White;
-            this.btnOda201.Location = new System.Drawing.Point(25, 158);
-            this.btnOda201.Name = "btnOda201";
-            this.btnOda201.Size = new System.Drawing.Size(60, 39);
-            this.btnOda201.TabIndex = 6;
-            this.btnOda201.Text = "201";
-            this.btnOda201.UseVisualStyleBackColor = false;
-            this.btnOda201.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // btnOda204
-            // 
-            this.btnOda204.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda204.ForeColor = System.Drawing.Color.White;
-            this.btnOda204.Location = new System.Drawing.Point(25, 221);
-            this.btnOda204.Name = "btnOda204";
-            this.btnOda204.Size = new System.Drawing.Size(60, 39);
-            this.btnOda204.TabIndex = 7;
-            this.btnOda204.Text = "204";
-            this.btnOda204.UseVisualStyleBackColor = false;
-            this.btnOda204.Click += new System.EventHandler(this.btnOda204_Click);
-            // 
-            // btnOda202
-            // 
-            this.btnOda202.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda202.ForeColor = System.Drawing.Color.White;
-            this.btnOda202.Location = new System.Drawing.Point(147, 158);
-            this.btnOda202.Name = "btnOda202";
-            this.btnOda202.Size = new System.Drawing.Size(60, 39);
-            this.btnOda202.TabIndex = 8;
-            this.btnOda202.Text = "202";
-            this.btnOda202.UseVisualStyleBackColor = false;
-            this.btnOda202.Click += new System.EventHandler(this.btnOda202_Click);
-            // 
-            // btnOda203
-            // 
-            this.btnOda203.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda203.ForeColor = System.Drawing.Color.White;
-            this.btnOda203.Location = new System.Drawing.Point(268, 158);
-            this.btnOda203.Name = "btnOda203";
-            this.btnOda203.Size = new System.Drawing.Size(60, 39);
-            this.btnOda203.TabIndex = 9;
-            this.btnOda203.Text = "203";
-            this.btnOda203.UseVisualStyleBackColor = false;
-            this.btnOda203.Click += new System.EventHandler(this.btnOda203_Click);
-            // 
-            // btnOda205
-            // 
-            this.btnOda205.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda205.ForeColor = System.Drawing.Color.White;
-            this.btnOda205.Location = new System.Drawing.Point(147, 221);
-            this.btnOda205.Name = "btnOda205";
-            this.btnOda205.Size = new System.Drawing.Size(60, 39);
-            this.btnOda205.TabIndex = 10;
-            this.btnOda205.Text = "205";
-            this.btnOda205.UseVisualStyleBackColor = false;
-            this.btnOda205.Click += new System.EventHandler(this.btnOda205_Click);
-            // 
-            // btnOda206
-            // 
-            this.btnOda206.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnOda206.ForeColor = System.Drawing.Color.White;
-            this.btnOda206.Location = new System.Drawing.Point(268, 221);
-            this.btnOda206.Name = "btnOda206";
-            this.btnOda206.Size = new System.Drawing.Size(60, 39);
-            this.btnOda206.TabIndex = 11;
-            this.btnOda206.Text = "206";
-            this.btnOda206.UseVisualStyleBackColor = false;
-            this.btnOda206.Click += new System.EventHandler(this.btnOda206_Click);
-            // 
-            // btnDoluOda
-            // 
-            this.btnDoluOda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDoluOda.ForeColor = System.Drawing.Color.White;
-            this.btnDoluOda.Location = new System.Drawing.Point(90, 277);
-            this.btnDoluOda.Name = "btnDoluOda";
-            this.btnDoluOda.Size = new System.Drawing.Size(60, 28);
-            this.btnDoluOda.TabIndex = 12;
-            this.btnDoluOda.Text = "DOLU";
-            this.btnDoluOda.UseVisualStyleBackColor = false;
-            this.btnDoluOda.Click += new System.EventHandler(this.btnDoluOda_Click);
+            this.gbOdalar.Controls.Add(this.btnBosOda);
+            this.gbOdalar.Controls.Add(this.btnDoluOda);
+            this.gbOdalar.Controls.Add(this.btnOda206);
+            this.gbOdalar.Controls.Add(this.btnOda205);
+            this.gbOdalar.Controls.Add(this.btnOda203);
+            this.gbOdalar.Controls.Add(this.btnOda202);
+            this.gbOdalar.Controls.Add(this.btnOda204);
+            this.gbOdalar.Controls.Add(this.btnOda201);
+            this.gbOdalar.Controls.Add(this.btnOda106);
+            this.gbOdalar.Controls.Add(this.btnOda104);
+            this.gbOdalar.Controls.Add(this.btnOda105);
+            this.gbOdalar.Controls.Add(this.btnOda103);
+            this.gbOdalar.Controls.Add(this.btnOda102);
+            this.gbOdalar.Controls.Add(this.btnOda101);
+            this.gbOdalar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbOdalar.Location = new System.Drawing.Point(372, 56);
+            this.gbOdalar.Name = "gbOdalar";
+            this.gbOdalar.Size = new System.Drawing.Size(355, 311);
+            this.gbOdalar.TabIndex = 23;
+            this.gbOdalar.TabStop = false;
+            this.gbOdalar.Text = "ODALAR";
+            this.gbOdalar.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnBosOda
             // 
@@ -600,60 +500,161 @@
             this.btnBosOda.UseVisualStyleBackColor = false;
             this.btnBosOda.Click += new System.EventHandler(this.btnBosOda_Click);
             // 
-            // groupBox1
+            // btnDoluOda
             // 
-            this.groupBox1.Controls.Add(this.txtÜcret);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox1.Location = new System.Drawing.Point(143, 194);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.groupBox1.Size = new System.Drawing.Size(108, 37);
-            this.groupBox1.TabIndex = 31;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ÜCRET";
+            this.btnDoluOda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDoluOda.ForeColor = System.Drawing.Color.White;
+            this.btnDoluOda.Location = new System.Drawing.Point(90, 277);
+            this.btnDoluOda.Name = "btnDoluOda";
+            this.btnDoluOda.Size = new System.Drawing.Size(60, 28);
+            this.btnDoluOda.TabIndex = 12;
+            this.btnDoluOda.Text = "DOLU";
+            this.btnDoluOda.UseVisualStyleBackColor = false;
+            this.btnDoluOda.Click += new System.EventHandler(this.btnDoluOda_Click);
             // 
-            // txtÜcret
+            // btnOda206
             // 
-            this.txtÜcret.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.txtÜcret.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtÜcret.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtÜcret.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtÜcret.Location = new System.Drawing.Point(15, 12);
-            this.txtÜcret.Name = "txtÜcret";
-            this.txtÜcret.Size = new System.Drawing.Size(90, 22);
-            this.txtÜcret.TabIndex = 0;
-            this.txtÜcret.TextChanged += new System.EventHandler(this.txtÜcret_TextChanged);
+            this.btnOda206.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda206.ForeColor = System.Drawing.Color.White;
+            this.btnOda206.Location = new System.Drawing.Point(268, 221);
+            this.btnOda206.Name = "btnOda206";
+            this.btnOda206.Size = new System.Drawing.Size(60, 39);
+            this.btnOda206.TabIndex = 11;
+            this.btnOda206.Text = "206";
+            this.btnOda206.UseVisualStyleBackColor = false;
+            this.btnOda206.Click += new System.EventHandler(this.btnOda206_Click);
             // 
-            // pictureBox2
+            // btnOda205
             // 
-            this.pictureBox2.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.maps;
-            this.pictureBox2.Location = new System.Drawing.Point(-312, -39);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
+            this.btnOda205.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda205.ForeColor = System.Drawing.Color.White;
+            this.btnOda205.Location = new System.Drawing.Point(147, 221);
+            this.btnOda205.Name = "btnOda205";
+            this.btnOda205.Size = new System.Drawing.Size(60, 39);
+            this.btnOda205.TabIndex = 10;
+            this.btnOda205.Text = "205";
+            this.btnOda205.UseVisualStyleBackColor = false;
+            this.btnOda205.Click += new System.EventHandler(this.btnOda205_Click);
             // 
-            // pictureBox1
+            // btnOda203
             // 
-            this.pictureBox1.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnOda203.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda203.ForeColor = System.Drawing.Color.White;
+            this.btnOda203.Location = new System.Drawing.Point(268, 158);
+            this.btnOda203.Name = "btnOda203";
+            this.btnOda203.Size = new System.Drawing.Size(60, 39);
+            this.btnOda203.TabIndex = 9;
+            this.btnOda203.Text = "203";
+            this.btnOda203.UseVisualStyleBackColor = false;
+            this.btnOda203.Click += new System.EventHandler(this.btnOda203_Click);
             // 
-            // maskedTextBox1
+            // btnOda202
             // 
-            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.maskedTextBox1.Location = new System.Drawing.Point(18, 18);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 22);
-            this.maskedTextBox1.TabIndex = 32;
+            this.btnOda202.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda202.ForeColor = System.Drawing.Color.White;
+            this.btnOda202.Location = new System.Drawing.Point(147, 158);
+            this.btnOda202.Name = "btnOda202";
+            this.btnOda202.Size = new System.Drawing.Size(60, 39);
+            this.btnOda202.TabIndex = 8;
+            this.btnOda202.Text = "202";
+            this.btnOda202.UseVisualStyleBackColor = false;
+            this.btnOda202.Click += new System.EventHandler(this.btnOda202_Click);
+            // 
+            // btnOda204
+            // 
+            this.btnOda204.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda204.ForeColor = System.Drawing.Color.White;
+            this.btnOda204.Location = new System.Drawing.Point(25, 221);
+            this.btnOda204.Name = "btnOda204";
+            this.btnOda204.Size = new System.Drawing.Size(60, 39);
+            this.btnOda204.TabIndex = 7;
+            this.btnOda204.Text = "204";
+            this.btnOda204.UseVisualStyleBackColor = false;
+            this.btnOda204.Click += new System.EventHandler(this.btnOda204_Click);
+            // 
+            // btnOda201
+            // 
+            this.btnOda201.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda201.ForeColor = System.Drawing.Color.White;
+            this.btnOda201.Location = new System.Drawing.Point(25, 158);
+            this.btnOda201.Name = "btnOda201";
+            this.btnOda201.Size = new System.Drawing.Size(60, 39);
+            this.btnOda201.TabIndex = 6;
+            this.btnOda201.Text = "201";
+            this.btnOda201.UseVisualStyleBackColor = false;
+            this.btnOda201.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // btnOda106
+            // 
+            this.btnOda106.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda106.ForeColor = System.Drawing.Color.White;
+            this.btnOda106.Location = new System.Drawing.Point(268, 96);
+            this.btnOda106.Name = "btnOda106";
+            this.btnOda106.Size = new System.Drawing.Size(60, 39);
+            this.btnOda106.TabIndex = 5;
+            this.btnOda106.Text = "106";
+            this.btnOda106.UseVisualStyleBackColor = false;
+            this.btnOda106.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // btnOda104
+            // 
+            this.btnOda104.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda104.ForeColor = System.Drawing.Color.White;
+            this.btnOda104.Location = new System.Drawing.Point(25, 96);
+            this.btnOda104.Name = "btnOda104";
+            this.btnOda104.Size = new System.Drawing.Size(60, 39);
+            this.btnOda104.TabIndex = 4;
+            this.btnOda104.Text = "104";
+            this.btnOda104.UseVisualStyleBackColor = false;
+            this.btnOda104.Click += new System.EventHandler(this.btnOda104_Click);
+            // 
+            // btnOda105
+            // 
+            this.btnOda105.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda105.ForeColor = System.Drawing.Color.White;
+            this.btnOda105.Location = new System.Drawing.Point(147, 96);
+            this.btnOda105.Name = "btnOda105";
+            this.btnOda105.Size = new System.Drawing.Size(60, 39);
+            this.btnOda105.TabIndex = 3;
+            this.btnOda105.Text = "105";
+            this.btnOda105.UseVisualStyleBackColor = false;
+            this.btnOda105.Click += new System.EventHandler(this.btnOda105_Click);
+            // 
+            // btnOda103
+            // 
+            this.btnOda103.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda103.ForeColor = System.Drawing.Color.White;
+            this.btnOda103.Location = new System.Drawing.Point(268, 36);
+            this.btnOda103.Name = "btnOda103";
+            this.btnOda103.Size = new System.Drawing.Size(60, 39);
+            this.btnOda103.TabIndex = 2;
+            this.btnOda103.Text = "103";
+            this.btnOda103.UseVisualStyleBackColor = false;
+            this.btnOda103.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnOda102
+            // 
+            this.btnOda102.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda102.ForeColor = System.Drawing.Color.White;
+            this.btnOda102.Location = new System.Drawing.Point(147, 36);
+            this.btnOda102.Name = "btnOda102";
+            this.btnOda102.Size = new System.Drawing.Size(60, 39);
+            this.btnOda102.TabIndex = 1;
+            this.btnOda102.Text = "102";
+            this.btnOda102.UseVisualStyleBackColor = false;
+            this.btnOda102.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnOda101
+            // 
+            this.btnOda101.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda101.ForeColor = System.Drawing.Color.White;
+            this.btnOda101.Location = new System.Drawing.Point(25, 36);
+            this.btnOda101.Name = "btnOda101";
+            this.btnOda101.Size = new System.Drawing.Size(60, 39);
+            this.btnOda101.TabIndex = 0;
+            this.btnOda101.Text = "101";
+            this.btnOda101.UseVisualStyleBackColor = false;
+            this.btnOda101.Click += new System.EventHandler(this.btnOda101_Click);
             // 
             // frmMusteriKayit
             // 
@@ -677,14 +678,17 @@
             this.Load += new System.EventHandler(this.frmKisiKayit2_Load);
             this.pnl_UstMenu.ResumeLayout(false);
             this.pnl_UstMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbMüsteriKayit.ResumeLayout(false);
-            this.gbOdalar.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupbox6.ResumeLayout(false);
@@ -695,10 +699,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbOdalar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -748,7 +749,7 @@
         private System.Windows.Forms.Button btnBosOda;
         private System.Windows.Forms.Button btnDoluOda;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtÜcret;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox txtUcret;
+        private System.Windows.Forms.MaskedTextBox mtbTelefonNumarasi;
     }
 }

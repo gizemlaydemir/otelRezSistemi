@@ -58,6 +58,18 @@
     <Compile Include="frmAnaEkran.Designer.cs">
       <DependentUpon>frmAnaEkran.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMusteriBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriBilgileri.Designer.cs">
+      <DependentUpon>frmMusteriBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdalar.Designer.cs">
+      <DependentUpon>frmOdalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmYoneticiGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     </Compile>
     <EmbeddedResource Include="frmAnaEkran.resx">
       <DependentUpon>frmAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriBilgileri.resx">
+      <DependentUpon>frmMusteriBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdalar.resx">
+      <DependentUpon>frmOdalar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmYoneticiGiris.resx">
       <DependentUpon>frmYoneticiGiris.cs</DependentUpon>
