@@ -37,11 +37,6 @@ namespace otelRezervasyonSistemi_Odev
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -81,6 +76,13 @@ namespace otelRezervasyonSistemi_Odev
         {
             txtKulAdi.Text = "";
             txtSifre.Text = "";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmAnaEkran frm = new frmAnaEkran();
+            frm.Show();
+            this.Close();
         }
     }
 }

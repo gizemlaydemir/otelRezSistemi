@@ -28,17 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtDogumTarihi = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtIsim = new System.Windows.Forms.TextBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.txtTcKimlik = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtUcret = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.dtpCikisTarihi = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -47,7 +42,6 @@
             this.txtOdaNumarasi = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.mtbTelefonNumarasi = new System.Windows.Forms.MaskedTextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupbox6 = new System.Windows.Forms.GroupBox();
             this.rbKadin = new System.Windows.Forms.RadioButton();
             this.rbErkek = new System.Windows.Forms.RadioButton();
@@ -58,65 +52,36 @@
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox7.SuspendLayout();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pnl_UstMenu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Btn_Cikis = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox11.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupbox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnl_UstMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.label2);
-            this.groupBox7.Controls.Add(this.txtDogumTarihi);
-            this.groupBox7.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox7.Location = new System.Drawing.Point(143, 104);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.groupBox7.Size = new System.Drawing.Size(154, 46);
-            this.groupBox7.TabIndex = 36;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "DOĞUM TARİHİ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.label2.Location = new System.Drawing.Point(91, -1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "gg.aa.yyyy";
-            // 
-            // txtDogumTarihi
-            // 
-            this.txtDogumTarihi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.txtDogumTarihi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDogumTarihi.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtDogumTarihi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDogumTarihi.Location = new System.Drawing.Point(15, 21);
-            this.txtDogumTarihi.Name = "txtDogumTarihi";
-            this.txtDogumTarihi.Size = new System.Drawing.Size(136, 22);
-            this.txtDogumTarihi.TabIndex = 0;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.txtSoyad);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox5.Location = new System.Drawing.Point(117, 33);
+            this.groupBox5.Location = new System.Drawing.Point(109, 56);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.groupBox5.Size = new System.Drawing.Size(96, 44);
+            this.groupBox5.Size = new System.Drawing.Size(96, 45);
             this.groupBox5.TabIndex = 34;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "SOYİSİM";
@@ -127,7 +92,7 @@
             this.txtSoyad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoyad.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtSoyad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSoyad.Location = new System.Drawing.Point(15, 19);
+            this.txtSoyad.Location = new System.Drawing.Point(15, 20);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(78, 22);
             this.txtSoyad.TabIndex = 0;
@@ -137,7 +102,7 @@
             this.groupBox4.Controls.Add(this.txtIsim);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox4.Location = new System.Drawing.Point(12, 32);
+            this.groupBox4.Location = new System.Drawing.Point(12, 56);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.groupBox4.Size = new System.Drawing.Size(83, 45);
@@ -161,7 +126,7 @@
             this.groupBox11.Controls.Add(this.txtTcKimlik);
             this.groupBox11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox11.Location = new System.Drawing.Point(12, 104);
+            this.groupBox11.Location = new System.Drawing.Point(12, 117);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.groupBox11.Size = new System.Drawing.Size(111, 46);
@@ -181,36 +146,12 @@
             this.txtTcKimlik.Size = new System.Drawing.Size(93, 22);
             this.txtTcKimlik.TabIndex = 0;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtUcret);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox1.Location = new System.Drawing.Point(383, 40);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.groupBox1.Size = new System.Drawing.Size(108, 37);
-            this.groupBox1.TabIndex = 42;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ÜCRET";
-            // 
-            // txtUcret
-            // 
-            this.txtUcret.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.txtUcret.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUcret.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtUcret.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtUcret.Location = new System.Drawing.Point(15, 12);
-            this.txtUcret.Name = "txtUcret";
-            this.txtUcret.Size = new System.Drawing.Size(90, 22);
-            this.txtUcret.TabIndex = 0;
-            // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.dtpCikisTarihi);
             this.groupBox9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox9.Location = new System.Drawing.Point(367, 179);
+            this.groupBox9.Location = new System.Drawing.Point(367, 149);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.groupBox9.Size = new System.Drawing.Size(124, 53);
@@ -230,7 +171,7 @@
             this.groupBox2.Controls.Add(this.dtpGirisTarihi);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox2.Location = new System.Drawing.Point(367, 103);
+            this.groupBox2.Location = new System.Drawing.Point(367, 76);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.groupBox2.Size = new System.Drawing.Size(124, 53);
@@ -250,10 +191,10 @@
             this.groupBox3.Controls.Add(this.txtOdaNumarasi);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox3.Location = new System.Drawing.Point(255, 40);
+            this.groupBox3.Location = new System.Drawing.Point(156, 179);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.groupBox3.Size = new System.Drawing.Size(108, 37);
+            this.groupBox3.Size = new System.Drawing.Size(118, 46);
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ODA NUMARASI";
@@ -265,9 +206,9 @@
             this.txtOdaNumarasi.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtOdaNumarasi.Enabled = false;
             this.txtOdaNumarasi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdaNumarasi.Location = new System.Drawing.Point(15, 12);
+            this.txtOdaNumarasi.Location = new System.Drawing.Point(15, 21);
             this.txtOdaNumarasi.Name = "txtOdaNumarasi";
-            this.txtOdaNumarasi.Size = new System.Drawing.Size(90, 22);
+            this.txtOdaNumarasi.Size = new System.Drawing.Size(100, 22);
             this.txtOdaNumarasi.TabIndex = 0;
             // 
             // groupBox8
@@ -276,7 +217,7 @@
             this.groupBox8.Controls.Add(this.pictureBox2);
             this.groupBox8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupBox8.Location = new System.Drawing.Point(159, 183);
+            this.groupBox8.Location = new System.Drawing.Point(12, 176);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.groupBox8.Size = new System.Drawing.Size(138, 49);
@@ -293,26 +234,16 @@
             this.mtbTelefonNumarasi.Size = new System.Drawing.Size(100, 22);
             this.mtbTelefonNumarasi.TabIndex = 32;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.maps;
-            this.pictureBox2.Location = new System.Drawing.Point(-312, -39);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
             // groupbox6
             // 
             this.groupbox6.Controls.Add(this.rbKadin);
             this.groupbox6.Controls.Add(this.rbErkek);
             this.groupbox6.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupbox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.groupbox6.Location = new System.Drawing.Point(12, 183);
+            this.groupbox6.Location = new System.Drawing.Point(135, 116);
             this.groupbox6.Name = "groupbox6";
             this.groupbox6.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.groupbox6.Size = new System.Drawing.Size(128, 49);
+            this.groupbox6.Size = new System.Drawing.Size(127, 49);
             this.groupbox6.TabIndex = 37;
             this.groupbox6.TabStop = false;
             this.groupbox6.Text = "CİNSİYET";
@@ -346,8 +277,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.button1.Location = new System.Drawing.Point(582, 12);
+            this.button1.Location = new System.Drawing.Point(582, 216);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 35);
             this.button1.TabIndex = 43;
@@ -357,6 +289,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.button2.Location = new System.Drawing.Point(582, 53);
             this.button2.Name = "button2";
@@ -369,6 +302,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.button3.Location = new System.Drawing.Point(582, 94);
             this.button3.Name = "button3";
@@ -380,6 +314,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.button4.Location = new System.Drawing.Point(582, 135);
             this.button4.Name = "button4";
@@ -408,11 +343,83 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-1, 257);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(741, 176);
             this.dataGridView1.TabIndex = 49;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.maps;
+            this.pictureBox2.Location = new System.Drawing.Point(-312, -39);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pnl_UstMenu
+            // 
+            this.pnl_UstMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.pnl_UstMenu.Controls.Add(this.pictureBox4);
+            this.pnl_UstMenu.Controls.Add(this.pictureBox1);
+            this.pnl_UstMenu.Controls.Add(this.Btn_Cikis);
+            this.pnl_UstMenu.Controls.Add(this.label1);
+            this.pnl_UstMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_UstMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_UstMenu.Name = "pnl_UstMenu";
+            this.pnl_UstMenu.Size = new System.Drawing.Size(738, 50);
+            this.pnl_UstMenu.TabIndex = 50;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Btn_Cikis
+            // 
+            this.Btn_Cikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.Btn_Cikis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Cikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Cikis.ForeColor = System.Drawing.Color.White;
+            this.Btn_Cikis.Location = new System.Drawing.Point(702, 11);
+            this.Btn_Cikis.Name = "Btn_Cikis";
+            this.Btn_Cikis.Size = new System.Drawing.Size(32, 32);
+            this.Btn_Cikis.TabIndex = 1;
+            this.Btn_Cikis.Text = "X";
+            this.Btn_Cikis.UseVisualStyleBackColor = false;
+            this.Btn_Cikis.Click += new System.EventHandler(this.Btn_Cikis_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.label1.Location = new System.Drawing.Point(48, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(169, 30);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Müsteri Bilgileri";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com__1_;
+            this.pictureBox4.Location = new System.Drawing.Point(214, 15);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // frmMusteriBilgileri
             // 
@@ -420,6 +427,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(738, 432);
+            this.Controls.Add(this.pnl_UstMenu);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
@@ -427,13 +435,11 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupbox6);
-            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox11);
@@ -444,43 +450,38 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMusteriBilgileri";
             this.Load += new System.EventHandler(this.frmMusteriBilgileri_Load);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupbox6.ResumeLayout(false);
             this.groupbox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnl_UstMenu.ResumeLayout(false);
+            this.pnl_UstMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDogumTarihi;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox txtIsim;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.TextBox txtTcKimlik;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtUcret;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.DateTimePicker dtpCikisTarihi;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -500,5 +501,10 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel pnl_UstMenu;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Btn_Cikis;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

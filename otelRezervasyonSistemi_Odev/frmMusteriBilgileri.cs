@@ -39,5 +39,24 @@ namespace otelRezervasyonSistemi_Odev
             DataTable data = blk.databilgial();
             dataGridView1.DataSource = data;
         }
+
+        private void Btn_Cikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmOdalar odalarForm = new frmOdalar(); // Yeni formu oluştur
+            odalarForm.Show(); // Yeni formu göster
+            this.Close(); // Mevcut formu kapat
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmMusteriKayit frm = new frmMusteriKayit();
+            frm.Show();
+            this.Close();
+        }
     }
 }

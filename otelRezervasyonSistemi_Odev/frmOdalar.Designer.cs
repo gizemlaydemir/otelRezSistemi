@@ -40,11 +40,18 @@
             this.btnOda103 = new System.Windows.Forms.Button();
             this.btnOda102 = new System.Windows.Forms.Button();
             this.btnOda101 = new System.Windows.Forms.Button();
+            this.pnl_UstMenu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Btn_Cikis = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnl_UstMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOda206
             // 
             this.btnOda206.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda206.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda206.ForeColor = System.Drawing.Color.White;
             this.btnOda206.Location = new System.Drawing.Point(571, 279);
             this.btnOda206.Name = "btnOda206";
@@ -56,6 +63,7 @@
             // btnOda205
             // 
             this.btnOda205.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda205.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda205.ForeColor = System.Drawing.Color.White;
             this.btnOda205.Location = new System.Drawing.Point(400, 279);
             this.btnOda205.Name = "btnOda205";
@@ -67,6 +75,7 @@
             // btnOda203
             // 
             this.btnOda203.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda203.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda203.ForeColor = System.Drawing.Color.White;
             this.btnOda203.Location = new System.Drawing.Point(67, 279);
             this.btnOda203.Name = "btnOda203";
@@ -78,6 +87,7 @@
             // btnOda202
             // 
             this.btnOda202.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda202.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda202.ForeColor = System.Drawing.Color.White;
             this.btnOda202.Location = new System.Drawing.Point(571, 175);
             this.btnOda202.Name = "btnOda202";
@@ -89,6 +99,7 @@
             // btnOda204
             // 
             this.btnOda204.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda204.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda204.ForeColor = System.Drawing.Color.White;
             this.btnOda204.Location = new System.Drawing.Point(231, 279);
             this.btnOda204.Name = "btnOda204";
@@ -100,6 +111,7 @@
             // btnOda201
             // 
             this.btnOda201.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda201.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda201.ForeColor = System.Drawing.Color.White;
             this.btnOda201.Location = new System.Drawing.Point(400, 175);
             this.btnOda201.Name = "btnOda201";
@@ -111,6 +123,7 @@
             // btnOda106
             // 
             this.btnOda106.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda106.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda106.ForeColor = System.Drawing.Color.White;
             this.btnOda106.Location = new System.Drawing.Point(231, 175);
             this.btnOda106.Name = "btnOda106";
@@ -122,6 +135,7 @@
             // btnOda104
             // 
             this.btnOda104.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda104.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda104.ForeColor = System.Drawing.Color.White;
             this.btnOda104.Location = new System.Drawing.Point(571, 78);
             this.btnOda104.Name = "btnOda104";
@@ -133,6 +147,7 @@
             // btnOda105
             // 
             this.btnOda105.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda105.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda105.ForeColor = System.Drawing.Color.White;
             this.btnOda105.Location = new System.Drawing.Point(67, 175);
             this.btnOda105.Name = "btnOda105";
@@ -144,6 +159,7 @@
             // btnOda103
             // 
             this.btnOda103.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda103.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda103.ForeColor = System.Drawing.Color.White;
             this.btnOda103.Location = new System.Drawing.Point(400, 78);
             this.btnOda103.Name = "btnOda103";
@@ -155,6 +171,7 @@
             // btnOda102
             // 
             this.btnOda102.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda102.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda102.ForeColor = System.Drawing.Color.White;
             this.btnOda102.Location = new System.Drawing.Point(231, 78);
             this.btnOda102.Name = "btnOda102";
@@ -166,6 +183,7 @@
             // btnOda101
             // 
             this.btnOda101.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnOda101.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOda101.ForeColor = System.Drawing.Color.White;
             this.btnOda101.Location = new System.Drawing.Point(67, 78);
             this.btnOda101.Name = "btnOda101";
@@ -174,12 +192,63 @@
             this.btnOda101.Text = "101";
             this.btnOda101.UseVisualStyleBackColor = false;
             // 
+            // pnl_UstMenu
+            // 
+            this.pnl_UstMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.pnl_UstMenu.Controls.Add(this.pictureBox1);
+            this.pnl_UstMenu.Controls.Add(this.Btn_Cikis);
+            this.pnl_UstMenu.Controls.Add(this.label1);
+            this.pnl_UstMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_UstMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_UstMenu.Name = "pnl_UstMenu";
+            this.pnl_UstMenu.Size = new System.Drawing.Size(749, 50);
+            this.pnl_UstMenu.TabIndex = 51;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Btn_Cikis
+            // 
+            this.Btn_Cikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.Btn_Cikis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Cikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Cikis.ForeColor = System.Drawing.Color.White;
+            this.Btn_Cikis.Location = new System.Drawing.Point(702, 11);
+            this.Btn_Cikis.Name = "Btn_Cikis";
+            this.Btn_Cikis.Size = new System.Drawing.Size(32, 32);
+            this.Btn_Cikis.TabIndex = 1;
+            this.Btn_Cikis.Text = "X";
+            this.Btn_Cikis.UseVisualStyleBackColor = false;
+            this.Btn_Cikis.Click += new System.EventHandler(this.Btn_Cikis_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
+            this.label1.Location = new System.Drawing.Point(48, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 30);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Oda Seçimi";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // frmOdalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(749, 431);
+            this.Controls.Add(this.pnl_UstMenu);
             this.Controls.Add(this.btnOda206);
             this.Controls.Add(this.btnOda205);
             this.Controls.Add(this.btnOda203);
@@ -194,11 +263,14 @@
             this.Controls.Add(this.btnOda101);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmOdalar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOdalar";
             this.Load += new System.EventHandler(this.frmOdalar_Load);
+            this.pnl_UstMenu.ResumeLayout(false);
+            this.pnl_UstMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -217,5 +289,9 @@
         private System.Windows.Forms.Button btnOda103;
         private System.Windows.Forms.Button btnOda102;
         private System.Windows.Forms.Button btnOda101;
+        private System.Windows.Forms.Panel pnl_UstMenu;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Btn_Cikis;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -25,7 +25,7 @@ namespace otelRezervasyonSistemi_Odev
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            frmYoneticiGiris frm = new frmYoneticiGiris();
+            frmAnaEkran frm = new frmAnaEkran();
             frm.Show();
             this.Close();
         }
@@ -226,6 +226,14 @@ namespace otelRezervasyonSistemi_Odev
 
         private void mtbTelefonNumarasi_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            frmMusteriBilgileri musteribilgileriForm = new frmMusteriBilgileri(); // Yeni formu oluştur
+            musteribilgileriForm.Show(); // Yeni formu göster
+            this.Close(); // Mevcut formu kapat
 
         }
     }

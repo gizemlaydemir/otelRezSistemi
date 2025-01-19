@@ -40,6 +40,7 @@
             // btnYöneticiGiris
             // 
             this.btnYöneticiGiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.btnYöneticiGiris.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnYöneticiGiris.ForeColor = System.Drawing.Color.White;
             this.btnYöneticiGiris.Location = new System.Drawing.Point(49, 159);
             this.btnYöneticiGiris.Name = "btnYöneticiGiris";
@@ -52,6 +53,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(283, 159);
             this.button1.Name = "button1";
@@ -59,10 +61,12 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "REZERVASYON";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(512, 159);
             this.button2.Name = "button2";
@@ -95,6 +99,7 @@
             this.Btn_Cikis.TabIndex = 1;
             this.Btn_Cikis.Text = "X";
             this.Btn_Cikis.UseVisualStyleBackColor = false;
+            this.Btn_Cikis.Click += new System.EventHandler(this.Btn_Cikis_Click);
             // 
             // label1
             // 
@@ -124,7 +129,6 @@
             this.Name = "frmAnaEkran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAnaEkran";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmAnaEkran_Load);
             this.pnl_UstMenu.ResumeLayout(false);
             this.pnl_UstMenu.PerformLayout();
