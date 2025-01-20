@@ -31,5 +31,34 @@ namespace otelRezervasyonSistemi_Odev.DAL
             }
 
         }
+        public void rezervazyonsil(long a)
+        {
+            new MySqlCommand("delete from MUSTERİ where musteritckimlik=" + a, (new DbBaglanti()).BaglantiCagır()).ExecuteReader();
+       
+        }
+        private string connectionstring = "Server=172.21.54.253; Database=25_132330052; Uid=25_132330052; Pwd=!nif.ogr52AY";
+
+        public bool rezguncelle( string musteriisim, string musterisoyad, long musteritckimlik, int odanumarasi, string giristarihi, string cikistarihi, string odatipi, long telefonnumarasi, string cinsiyet)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionstring))
+            {
+                string query = "update MUSTERİ set musteriisim=@isim,musterisoyad=@soyad,musteritckimlik=@tc,odanumarasi=@odanu,giristarihi=@gir,cikistarihi=@cik,odatipi=@odatip,telefonnumarasi=@telnu,cinsiyet=@cinsiyet where musteritckimlik=@tc";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                
+                cmd.Parameters.AddWithValue("@isim", musteriisim);
+                cmd.Parameters.AddWithValue("@soyad", musterisoyad);
+                cmd.Parameters.AddWithValue("@tc", musteritckimlik);
+                cmd.Parameters.AddWithValue("@odanu", odanumarasi);
+                cmd.Parameters.AddWithValue("@gir", giristarihi);
+                cmd.Parameters.AddWithValue("@cik", cikistarihi);
+                cmd.Parameters.AddWithValue("@odatip", odatipi);
+                cmd.Parameters.AddWithValue("@telnu", telefonnumarasi);
+                cmd.Parameters.AddWithValue("@cinsiyet", cinsiyet);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;
+            }
+        }
     }
 }

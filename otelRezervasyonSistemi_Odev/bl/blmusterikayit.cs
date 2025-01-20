@@ -21,5 +21,17 @@ namespace otelRezervasyonSistemi_Odev.bl
             MusteriDAL data = new MusteriDAL();
             return data.ver();
         }
+        internal void rezervasyonsil(long a)
+        {
+            (new MusteriDAL()).rezervazyonsil(a);
+        }
+        private MusteriDAL _dalrez = new MusteriDAL(); 
+  
+        public bool rezguncelle( string musteriisim, string musterisoyad, long musteritckimlik, int odanumarasi, string giristarihi, string cikistarihi, string odatipi, long telefonnumarasi, string cinsiyet)
+        {
+            return _dalrez.rezguncelle( musteriisim, musterisoyad, musteritckimlik, odanumarasi, giristarihi, cikistarihi, odatipi, telefonnumarasi, cinsiyet);
+        }
     }
 }
+
+  
