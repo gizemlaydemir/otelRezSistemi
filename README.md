@@ -1,5 +1,7 @@
 # otelRezSistemi
- 
+
+ [Tanıtım videosu]([URL](https://www.youtube.com/watch?v=YiSABU1Hi8U))
+
 
 Class Diyagramı
 ![class diyagramı](Diyagramlar/ClassDiyagramı.JPG)
