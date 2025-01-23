@@ -57,11 +57,10 @@ namespace otelRezervasyonSistemi_Odev
             //temizlemetuşu
             txtTcKimlik.Text = "";
             txtIsim.Text = "";
-            mtbTelefonNumarasi.Text = "";
+            txtTelefonNumarasi.Text = "";
             txtSoyad.Text = "";
             txtOdaNumarasi.Text = "";
-            rbErkek.Checked = true;
-            rbKadin.Checked = false;
+            cbcinsiyet.Text = "";
 
 
 

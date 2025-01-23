@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.pnl_UstMenu = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Cikis = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTemizle = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.gbMüsteriKayit = new System.Windows.Forms.GroupBox();
-            this.mtbTelefonNumarasi = new System.Windows.Forms.MaskedTextBox();
-            this.rbErkek = new System.Windows.Forms.RadioButton();
-            this.rbKadin = new System.Windows.Forms.RadioButton();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.cbodatipi = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -48,6 +47,7 @@
             this.txtOdaNumarasi = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.txtTelefonNumarasi = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupbox6 = new System.Windows.Forms.GroupBox();
             this.cbcinsiyet = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -71,24 +71,21 @@
             this.btnOda103 = new System.Windows.Forms.Button();
             this.btnOda102 = new System.Windows.Forms.Button();
             this.btnOda101 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_UstMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbMüsteriKayit.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupbox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.gbOdalar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_UstMenu
@@ -103,6 +100,28 @@
             this.pnl_UstMenu.Name = "pnl_UstMenu";
             this.pnl_UstMenu.Size = new System.Drawing.Size(739, 50);
             this.pnl_UstMenu.TabIndex = 1;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com__1_;
+            this.pictureBox3.Location = new System.Drawing.Point(192, 14);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Btn_Cikis
             // 
@@ -160,9 +179,6 @@
             // 
             // gbMüsteriKayit
             // 
-            this.gbMüsteriKayit.Controls.Add(this.mtbTelefonNumarasi);
-            this.gbMüsteriKayit.Controls.Add(this.rbErkek);
-            this.gbMüsteriKayit.Controls.Add(this.rbKadin);
             this.gbMüsteriKayit.Controls.Add(this.groupBox10);
             this.gbMüsteriKayit.Controls.Add(this.groupBox9);
             this.gbMüsteriKayit.Controls.Add(this.groupBox2);
@@ -180,42 +196,6 @@
             this.gbMüsteriKayit.TabStop = false;
             this.gbMüsteriKayit.Text = "MÜŞTERİ BİLGİLERİ";
             this.gbMüsteriKayit.Enter += new System.EventHandler(this.gbMüsteriKayit_Enter);
-            // 
-            // mtbTelefonNumarasi
-            // 
-            this.mtbTelefonNumarasi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.mtbTelefonNumarasi.Location = new System.Drawing.Point(235, 36);
-            this.mtbTelefonNumarasi.Mask = "(999) 000-0000";
-            this.mtbTelefonNumarasi.Name = "mtbTelefonNumarasi";
-            this.mtbTelefonNumarasi.Size = new System.Drawing.Size(100, 25);
-            this.mtbTelefonNumarasi.TabIndex = 32;
-            this.mtbTelefonNumarasi.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtbTelefonNumarasi_MaskInputRejected);
-            // 
-            // rbErkek
-            // 
-            this.rbErkek.AutoSize = true;
-            this.rbErkek.Checked = true;
-            this.rbErkek.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbErkek.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbErkek.Location = new System.Drawing.Point(301, 48);
-            this.rbErkek.Name = "rbErkek";
-            this.rbErkek.Size = new System.Drawing.Size(63, 23);
-            this.rbErkek.TabIndex = 0;
-            this.rbErkek.TabStop = true;
-            this.rbErkek.Text = "Erkek";
-            this.rbErkek.UseVisualStyleBackColor = true;
-            // 
-            // rbKadin
-            // 
-            this.rbKadin.AutoSize = true;
-            this.rbKadin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbKadin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbKadin.Location = new System.Drawing.Point(293, 25);
-            this.rbKadin.Name = "rbKadin";
-            this.rbKadin.Size = new System.Drawing.Size(64, 23);
-            this.rbKadin.TabIndex = 1;
-            this.rbKadin.Text = "Kadın";
-            this.rbKadin.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -340,6 +320,16 @@
             this.txtTelefonNumarasi.Name = "txtTelefonNumarasi";
             this.txtTelefonNumarasi.Size = new System.Drawing.Size(100, 22);
             this.txtTelefonNumarasi.TabIndex = 13;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.maps;
+            this.pictureBox2.Location = new System.Drawing.Point(-312, -39);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
             // 
             // groupbox6
             // 
@@ -635,38 +625,6 @@
             this.btnOda101.UseVisualStyleBackColor = false;
             this.btnOda101.Click += new System.EventHandler(this.btnOda101_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.maps;
-            this.pictureBox2.Location = new System.Drawing.Point(-312, -39);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(192, 14);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::otelRezervasyonSistemi_Odev.Properties.Resources.pngwing_com;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // frmMusteriKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -689,8 +647,9 @@
             this.Load += new System.EventHandler(this.frmKisiKayit2_Load);
             this.pnl_UstMenu.ResumeLayout(false);
             this.pnl_UstMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbMüsteriKayit.ResumeLayout(false);
-            this.gbMüsteriKayit.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
@@ -699,6 +658,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupbox6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -707,9 +667,6 @@
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.gbOdalar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -732,8 +689,6 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupbox6;
-        private System.Windows.Forms.RadioButton rbKadin;
-        private System.Windows.Forms.RadioButton rbErkek;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -755,7 +710,6 @@
         private System.Windows.Forms.Button btnOda204;
         private System.Windows.Forms.Button btnBosOda;
         private System.Windows.Forms.Button btnDoluOda;
-        private System.Windows.Forms.MaskedTextBox mtbTelefonNumarasi;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.ComboBox cbodatipi;
         private System.Windows.Forms.TextBox textBox1;
